@@ -67,17 +67,6 @@ app.get('/api/candidate/:id', (req, res) => {
 });
 
 
-// //CREATE a candidate
-// const sql = `INSERT INTO candidates (id, first_name, last_name, industry_connected)
-//             VALUES (?,?,?,?)`;
-// const params = [1, 'Ronald', 'Firebanks', 1];
-
-// db.query(sql, params, (err, result) => {
-//     if (err) {
-//         console.log(err)
-//     }
-//     console.log(result);
-// });
 
 //CREATE a candidate
 app.post('/api/candidate', ({ body }, res) => {
